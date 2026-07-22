@@ -1,0 +1,33 @@
+name: DO EAT Website CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check project structure
+        run: |
+          echo "Checking required files..."
+
+          test -f index.html
+          test -f style.css
+          test -f script.js
+
+          echo "All required files found."
+
+      - name: List project files
+        run: ls -R
+
+      - name: Success
+        run: echo "✅ DO EAT Website passed all checks!"
