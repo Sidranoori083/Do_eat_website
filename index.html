@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Do Eat Restaurant Manchester – Authentic Chinese & Asian cuisine in the heart of Manchester. Ramen, noodles, rice dishes and more. Unit B1, City Tower, Mosley St, M1 4AH." />
+  <meta name="keywords" content="Do Eat Manchester, Chinese restaurant Manchester, ramen Manchester, noodles Manchester, Asian food Manchester, City Tower restaurant" />
+  <meta name="author" content="Do Eat Restaurant" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Do Eat Restaurant – Manchester" />
+  <meta property="og:description" content="Authentic Chinese & Asian cuisine in the heart of Manchester. Ramen, noodles, rice dishes and more." />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:url" content="https://doeat-manchester.co.uk" />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Do Eat Restaurant – Manchester" />
+  <meta name="twitter:description" content="Authentic Chinese & Asian cuisine in Manchester. Ramen, noodles, rice dishes." />
+
+  <title>Do Eat Restaurant | Authentic Chinese & Asian Cuisine | Manchester</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Restaurant Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Do Eat Restaurant",
+    "description": "Authentic Chinese and Asian cuisine in Manchester, specialising in noodles, ramen and rice dishes.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Unit B1, City Tower, Mosley Street",
+      "addressLocality": "Manchester",
+      "postalCode": "M1 4AH",
+      "addressCountry": "GB"
+    },
+    "telephone": "+441614253560",
+    "priceRange": "££",
+    "servesCuisine": ["Chinese", "Asian"],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"11:30","closes":"21:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"11:30","closes":"22:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday"],"opens":"12:00","closes":"21:00"}
+    ],
+    "aggregateRating": {"@type":"AggregateRating","ratingValue":"4.2","reviewCount":"146"},
+    "hasMenu": "https://www.ubereats.com/gb/store/do-eat-restaurant/wgEC83jGVFaxYCymcVw1GA"
+  }
+  </script>
+</head>
+
+<body class="light-mode" id="top">
+
+  <!-- ═══════════════════════════════════ LOADING SCREEN ══════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-logo">
+        <span class="loader-de">DO</span>
+        <span class="loader-eat">EAT</span>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <p class="loader-tag">Manchester's Finest Asian Kitchen</p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ SCROLL PROGRESS ══════════════════════════════════ -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════ NAVBAR ══════════════════════════════════ -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Do Eat Restaurant Home">
+        <span class="logo-do">DO</span><span class="logo-eat">EAT</span>
+        <span class="logo-sub">Manchester</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#home"    class="nav-link active" aria-label="Home">Home</a></li>
+        <li><a href="#about"   class="nav-link" aria-label="About">About</a></li>
+        <li><a href="#menu"    class="nav-link" aria-label="Menu">Menu</a></li>
+        <li><a href="#specials" class="nav-link" aria-label="Specials">Specials</a></li>
+        <li><a href="#gallery" class="nav-link" aria-label="Gallery">Gallery</a></li>
+        <li><a href="#why-us"  class="nav-link" aria-label="Why Us">Why Us</a></li>
+        <li><a href="#reviews" class="nav-link" aria-label="Reviews">Reviews</a></li>
+        <li><a href="#location" class="nav-link" aria-label="Location">Location</a></li>
+        <li><a href="#contact" class="nav-link" aria-label="Contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="btn-reserve" aria-label="Reserve a table">Reserve</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════ HERO SECTION ══════════════════════════════════ -->
+  <section id="home" class="hero" aria-label="Hero section">
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-overlay"></div>
+      <!-- Animated food emoji particles -->
+      <div class="food-float f1" aria-hidden="true">🍜</div>
+      <div class="food-float f2" aria-hidden="true">🥢</div>
+      <div class="food-float f3" aria-hidden="true">🍲</div>
+      <div class="food-float f4" aria-hidden="true">🥟</div>
+      <div class="food-float f5" aria-hidden="true">🍱</div>
+      <div class="food-float f6" aria-hidden="true">🍝</div>
+      <div class="food-float f7" aria-hidden="true">🥘</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge" data-aos="fade-down" data-aos-duration="800">
+        <i class="fas fa-star"></i> 4.2 Rating · 146 Reviews · Manchester City Centre
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
+        <span class="title-line-1">Authentic</span>
+        <span class="title-line-2">Asian Kitchen</span>
+        <span class="title-do">DO <span class="title-eat">EAT</span></span>
+      </h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-duration="900" data-aos-delay="250">
+        Handcrafted ramen, silky noodles &amp; bold rice dishes —<br>
+        straight from the heart of Manchester's vibrant Chinatown district.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
+        <a href="#contact" class="btn-primary ripple" aria-label="Reserve a table">
+          <i class="fas fa-calendar-check"></i> Reserve a Table
+        </a>
+        <a href="#menu" class="btn-outline ripple" aria-label="View our menu">
+          <i class="fas fa-utensils"></i> View Menu
+        </a>
+      </div>
+      <div class="hero-info" data-aos="fade-up" data-aos-duration="900" data-aos-delay="550">
+        <span><i class="fas fa-map-marker-alt"></i> City Tower, Mosley St, M1 4AH</span>
+        <span class="divider">|</span>
+        <span><i class="fas fa-phone"></i> +44 161 425 3560</span>
+        <span class="divider">|</span>
+        <span><i class="fas fa-clock"></i> Open Today 11:30 – 22:00</span>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-label="Scroll down">
+      <div class="scroll-dot"></div>
+      <span>Scroll</span>
+    </div>
+
+    <!-- Parallax shapes -->
+    <div class="parallax-shape s1" aria-hidden="true"></div>
+    <div class="parallax-shape s2" aria-hidden="true"></div>
+    <div class="parallax-shape s3" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ ANNOUNCEMENT BAR ══════════════════════════════════ -->
+  <div class="announce-bar" role="marquee" aria-label="Announcements">
+    <div class="announce-track">
+      <span>🍜 Authentic Ramen &amp; Noodles</span>
+      <span class="dot">✦</span>
+      <span>🥟 Freshly Made Dumplings Daily</span>
+      <span class="dot">✦</span>
+      <span>📦 Delivery via Uber Eats</span>
+      <span class="dot">✦</span>
+      <span>📍 Unit B1, City Tower, Mosley St, Manchester</span>
+      <span class="dot">✦</span>
+      <span>⭐ 4.2 Stars on Google · 146 Reviews</span>
+      <span class="dot">✦</span>
+      <span>🍜 Authentic Ramen &amp; Noodles</span>
+      <span class="dot">✦</span>
+      <span>🥟 Freshly Made Dumplings Daily</span>
+      <span class="dot">✦</span>
+      <span>📦 Delivery via Uber Eats</span>
+      <span class="dot">✦</span>
+      <span>📍 Unit B1, City Tower, Mosley St, Manchester</span>
+      <span class="dot">✦</span>
+      <span>⭐ 4.2 Stars on Google · 146 Reviews</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════ ABOUT SECTION ══════════════════════════════════ -->
+  <section id="about" class="section about-section" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right" data-aos-duration="900">
+          <div class="about-img-wrap">
+            <div class="about-img-main" aria-label="Do Eat restaurant exterior">
+            <img src="assets/images/do-eat-outside.jpg" alt="Do Eat restaurant exterior" class="about-img-photo" />
+          </div>
+          <div class="about-img-accent" aria-label="Signature ramen bowl">
+            <img src="assets/images/signature-ramen.jpg" alt="Signature ramen bowl" class="about-img-photo" />
+          </div>
+            <div class="about-badge-float">
+              <span class="badge-year">Est.</span>
+              <span class="badge-num">M1</span>
+              <span class="badge-city">Manchester</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <div class="section-tag">Our Story</div>
+          <h2 id="about-title" class="section-title">Bold Flavours.<br>Honest Food.</h2>
+          <p class="about-lead">
+            Tucked inside City Tower on Mosley Street, Do Eat brings Manchester the vibrant, comforting flavours of authentic Chinese and Asian cooking — no frills, no fuss, just brilliant food at honest prices.
+          </p>
+          <p class="about-body">
+            We specialise in handcrafted ramen broths, silky noodle dishes and hearty rice plates built on time-honoured recipes. Every bowl is made with care, using premium ingredients and daily-made sauces that let the flavour do the talking. Whether you're grabbing a solo lunch or settling in for dinner with friends, Do Eat is your spot.
+          </p>
+          <p class="about-body">
+            From the exterior of our City Tower kitchen to the plates we serve, quality is the promise behind every dish.
+          </p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <i class="fas fa-leaf"></i>
+              <span>Fresh Daily</span>
+            </div>
+            <div class="pillar">
+              <i class="fas fa-fire"></i>
+              <span>Bold Flavours</span>
+            </div>
+            <div class="pillar">
+              <i class="fas fa-wifi"></i>
+              <span>Free Wi-Fi</span>
+            </div>
+            <div class="pillar">
+              <i class="fas fa-child"></i>
+              <span>Family Friendly</span>
+            </div>
+          </div>
+          <a href="#menu" class="btn-primary ripple" style="display:inline-flex;margin-top:1.5rem;" aria-label="Explore our menu">
+            <i class="fas fa-utensils"></i> Explore Menu
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats row -->
+      <div class="stats-row" data-aos="fade-up" data-aos-duration="900" data-aos-delay="200">
+        <div class="stat-item">
+          <span class="stat-number" data-target="146">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Google Reviews</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span><span class="stat-suffix">.2★</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Menu Items</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="7">0</span><span class="stat-suffix"> Days</span>
+          <span class="stat-label">Open Every Week</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ MENU SECTION ══════════════════════════════════ -->
+  <section id="menu" class="section menu-section" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">What We Serve</div>
+        <h2 id="menu-title" class="section-title">Our Menu</h2>
+        <p class="section-sub">Handcrafted with bold, authentic flavours. £10–£20 per dish.</p>
+      </div>
+
+      <!-- Search & Filter -->
+      <div class="menu-controls" data-aos="fade-up" data-aos-delay="100">
+        <div class="menu-search-wrap">
+          <i class="fas fa-search"></i>
+          <input type="text" id="menuSearch" placeholder="Search dishes..." aria-label="Search menu items" />
+        </div>
+        <div class="menu-filters" role="tablist" aria-label="Menu categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="ramen" role="tab" aria-selected="false">Ramen</button>
+          <button class="filter-btn" data-filter="rice" role="tab" aria-selected="false">Rice Dishes</button>
+          <button class="filter-btn" data-filter="noodles" role="tab" aria-selected="false">Noodles</button>
+          <button class="filter-btn" data-filter="small-plates" role="tab" aria-selected="false">Small Plates</button>
+          <button class="filter-btn" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- RAMEN -->
+        <article class="menu-card" data-category="ramen" data-name="tomato sliced beef ramen" role="article" aria-label="Tomato & Sliced Beef Ramen">
+          <div class="menu-card-img">
+            <div class="dish-icon-wrap ramen-color"><i class="fas fa-bowl-food"></i></div>
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Tomato &amp; Sliced Beef Ramen</h3>
+              <span class="menu-price">£11.95</span>
+            </div>
+            <p>Rich tomato broth with tender sliced beef, springy ramen noodles, spring onions and a soft-boiled egg.</p>
+            <div class="menu-tags"><span>Ramen</span><span>Beef</span><span>Bestseller</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="ramen" data-name="spicy mala ramen" role="article" aria-label="Spicy Mala Ramen">
+          <div class="menu-card-img">
+            <div class="dish-icon-wrap ramen-color"><i class="fas fa-fire-flame-curved"></i></div>
+            <span class="menu-badge spicy">🌶 Spicy</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Spicy Mala Ramen</h3>
+              <span class="menu-price">£12.50</span>
+            </div>
+            <p>Numbing Sichuan mala broth with hand-pulled noodles, bok choy, mushrooms and chilli oil.</p>
+            <div class="menu-tags"><span>Ramen</span><span>Spicy</span><span>Veg Option</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="ramen" data-name="chicken broth ramen" role="article" aria-label="Chicken Broth Ramen">
+          <div class="menu-card-img">
+            <div class="dish-icon-wrap ramen-color"><i class="fas fa-drumstick-bite"></i></div>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Chicken Broth Ramen</h3>
+              <span class="menu-price">£10.95</span>
+            </div>
+            <p>Clear, delicate chicken broth with ramen noodles, corn, bamboo shoots and roasted chicken slices.</p>
+            <div class="menu-tags"><span>Ramen</span><span>Chicken</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="ramen" data-name="beef ramen" role="article" aria-label="Beef Ramen">
+          <div class="menu-card-img">
+            <img src="assets/images/beef-ramen.jpg" alt="Beef Ramen" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Beef Ramen</h3>
+              <span class="menu-price">£12.50</span>
+            </div>
+            <p>Rich beef broth with tender sliced beef, chewy noodles, bok choy and spring onions.</p>
+            <div class="menu-tags"><span>Ramen</span><span>Beef</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="ramen" data-name="char sui ramen" role="article" aria-label="Char Sui Ramen">
+          <div class="menu-card-img">
+            <img src="assets/images/char-sui-ramen.jpg" alt="Char Sui Ramen" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Char Sui Ramen</h3>
+              <span class="menu-price">£13.50</span>
+            </div>
+            <p>Slow-roasted char sui pork served in rich broth with noodles, bamboo shoots and narutomaki.</p>
+            <div class="menu-tags"><span>Ramen</span><span>Pork</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="ramen" data-name="bacon ramen" role="article" aria-label="Bacon Ramen">
+          <div class="menu-card-img">
+            <img src="assets/images/bacon-ramen.jpg" alt="Bacon Ramen" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Bacon Ramen</h3>
+              <span class="menu-price">£12.95</span>
+            </div>
+            <p>Smoky bacon, savoury broth and noodles topped with scallions and garlic oil.</p>
+            <div class="menu-tags"><span>Ramen</span><span>Pork</span></div>
+          </div>
+        </article>
+
+        <!-- RICE DISHES -->
+        <article class="menu-card" data-category="rice" data-name="sliced pork belly hot chilli blackbean rice" role="article" aria-label="Sliced Pork Belly Rice">
+          <div class="menu-card-img">
+            <div class="dish-icon-wrap rice-color"><i class="fas fa-bowl-rice"></i></div>
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Pork Belly in Hot Chilli &amp; Black Bean with Rice</h3>
+              <span class="menu-price">£12.50</span>
+            </div>
+            <p>Slow-braised pork belly in a bold hot chilli and black bean sauce, served over steamed jasmine rice.</p>
+            <div class="menu-tags"><span>Rice</span><span>Pork</span><span>Bestseller</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="rice" data-name="stewed drumstick rice" role="article" aria-label="Stewed Drumstick with Rice">
+          <div class="menu-card-img">
+            <div class="dish-icon-wrap rice-color"><i class="fas fa-drumstick-bite"></i></div>
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Stewed Drumstick with Rice</h3>
+              <span class="menu-price">£11.50</span>
+            </div>
+            <p>Tender slow-stewed chicken drumstick in a savoury soy-ginger gravy over fluffy steamed rice.</p>
+            <div class="menu-tags"><span>Rice</span><span>Chicken</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="rice" data-name="beef fried rice" role="article" aria-label="Beef Fried Rice">
+          <div class="menu-card-img">
+            <div class="dish-icon-wrap rice-color"><i class="fas fa-bowl-rice"></i></div>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Beef Fried Rice</h3>
+              <span class="menu-price">£11.95</span>
+            </div>
+            <p>Wok-tossed egg fried rice with seasoned sliced beef, spring onions and a touch of oyster sauce.</p>
+            <div class="menu-tags"><span>Rice</span><span>Beef</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="rice" data-name="chicken katsu teriyaki with rice" role="article" aria-label="Chicken Katsu Teriyaki with Rice">
+          <div class="menu-card-img">
+            <img src="assets/images/chicken-katsu-teriyaki-with-rice.jpg" alt="Chicken Katsu Teriyaki with Rice" />
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Chicken Katsu Teriyaki with Rice</h3>
+              <span class="menu-price">£12.95</span>
+            </div>
+            <p>Crispy chicken katsu glazed in teriyaki sauce, served with steamed rice and pickled salad.</p>
+            <div class="menu-tags"><span>Rice</span><span>Chicken</span><span>Popular</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="rice" data-name="sweet and sour chicken" role="article" aria-label="Sweet and Sour Chicken">
+          <div class="menu-card-img">
+            <img src="assets/images/sweet-and-sour-chicken.jpg" alt="Sweet and Sour Chicken" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Sweet and Sour Chicken</h3>
+              <span class="menu-price">£11.95</span>
+            </div>
+            <p>Crispy chicken pieces in a tangy sweet and sour sauce with pineapple, peppers and rice.</p>
+            <div class="menu-tags"><span>Rice</span><span>Chicken</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="rice" data-name="beef curry and rice" role="article" aria-label="Beef Curry and Rice">
+          <div class="menu-card-img">
+            <img src="assets/images/beef-curry-and-rice.jpg" alt="Beef Curry and Rice" />
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Beef Curry and Rice</h3>
+              <span class="menu-price">£12.95</span>
+            </div>
+            <p>Slow-cooked beef curry with fragrant spices, served with fluffy steamed rice.</p>
+            <div class="menu-tags"><span>Rice</span><span>Beef</span></div>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid row 1 -->
+    </div>
+  </section>
+
+
+  <!-- menu grid continued inside same section wrapper but separate container for row 2 -->
+  <div class="container" style="padding-top:0;">
+    <div class="menu-grid" id="menuGrid2">
+
+      <!-- NOODLES -->
+      <article class="menu-card" data-category="noodles" data-name="beef chow mein noodles" role="article" aria-label="Beef Chow Mein">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap noodles-color"><i class="fas fa-utensils"></i></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Beef Chow Mein</h3>
+            <span class="menu-price">£12.50</span>
+          </div>
+          <p>Stir-fried egg noodles with tender beef strips, beansprouts, peppers and house soy sauce.</p>
+          <div class="menu-tags"><span>Noodles</span><span>Beef</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="noodles" data-name="vegetable udon noodles stir fry" role="article" aria-label="Vegetable Udon Stir Fry">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap noodles-color"><i class="fas fa-leaf"></i></div>
+          <span class="menu-badge veg">🌿 Veg</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Vegetable Udon Stir Fry</h3>
+            <span class="menu-price">£10.50</span>
+          </div>
+          <p>Thick udon noodles tossed with seasonal vegetables, tofu, sesame oil and a light soy glaze.</p>
+          <div class="menu-tags"><span>Noodles</span><span>Vegetarian</span><span>Healthy</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="noodles" data-name="udon" role="article" aria-label="Udon">
+        <div class="menu-card-img">
+          <img src="assets/images/udon.jpg" alt="Udon" />
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Udon</h3>
+            <span class="menu-price">£11.95</span>
+          </div>
+          <p>Comforting udon noodles in a savoury broth with greens and spring onions.</p>
+          <div class="menu-tags"><span>Noodles</span><span>Hot</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="noodles" data-name="sichuan spicy noodle" role="article" aria-label="Sichuan Spicy Noodle">
+        <div class="menu-card-img">
+          <img src="assets/images/sichuan-spicy-noodle.jpg" alt="Sichuan Spicy Noodle" />
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Sichuan Spicy Noodle</h3>
+            <span class="menu-price">£12.50</span>
+          </div>
+          <p>Chilli oil-coated noodles tossed with Sichuan peppercorn spice, spring onions and chili flakes.</p>
+          <div class="menu-tags"><span>Noodles</span><span>Spicy</span></div>
+        </div>
+      </article>
+
+      <!-- SMALL PLATES -->
+      <article class="menu-card" data-category="small-plates" data-name="steamed pork dumplings" role="article" aria-label="Steamed Pork Dumplings">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap small-color"><i class="fas fa-circle-dot"></i></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Steamed Pork Dumplings</h3>
+            <span class="menu-price">£6.95</span>
+          </div>
+          <p>Handmade dumplings filled with seasoned pork and ginger, served with a house dipping sauce.</p>
+          <div class="menu-tags"><span>Small Plate</span><span>Pork</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="small-plates" data-name="vegetable spring rolls" role="article" aria-label="Vegetable Spring Rolls">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap small-color"><i class="fas fa-leaf"></i></div>
+          <span class="menu-badge veg">🌿 Veg</span>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Vegetable Spring Rolls</h3>
+            <span class="menu-price">£5.50</span>
+          </div>
+          <p>Crispy golden spring rolls packed with shredded cabbage, carrots and glass noodles. Served with sweet chilli.</p>
+          <div class="menu-tags"><span>Small Plate</span><span>Vegetarian</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="small-plates" data-name="wonton vegetable gyoza" role="article" aria-label="Wonton Vegetable Gyoza">
+        <div class="menu-card-img">
+          <img src="assets/images/wonton-vegetable-gyoza.jpg" alt="Wonton Vegetable Gyoza" />
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Wonton Vegetable Gyoza</h3>
+            <span class="menu-price">£7.50</span>
+          </div>
+          <p>Steamed gyoza filled with seasoned vegetables and wonton-style wrapper, served with soy dipping sauce.</p>
+          <div class="menu-tags"><span>Small Plate</span><span>Vegetarian</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="small-plates" data-name="bouillon soup starter" role="article" aria-label="Bouillon Soup">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap small-color"><i class="fas fa-mug-hot"></i></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Bouillon Soup</h3>
+            <span class="menu-price">£5.95</span>
+          </div>
+          <p>Light, clear bouillon broth with soft tofu, seaweed and silken egg — a classic Asian starter.</p>
+          <div class="menu-tags"><span>Small Plate</span><span>Soup</span><span>Healthy</span></div>
+        </div>
+      </article>
+
+      <!-- DRINKS -->
+      <article class="menu-card" data-category="drinks" data-name="jasmine tea hot cold" role="article" aria-label="Jasmine Tea">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap drinks-color"><i class="fas fa-mug-hot"></i></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Jasmine Tea</h3>
+            <span class="menu-price">£2.50</span>
+          </div>
+          <p>Traditional Chinese jasmine tea, served hot or chilled over ice. Delicate and fragrant.</p>
+          <div class="menu-tags"><span>Drink</span><span>Hot/Cold</span></div>
+        </div>
+      </article>
+
+      <article class="menu-card" data-category="drinks" data-name="soft drinks water juice" role="article" aria-label="Soft Drinks">
+        <div class="menu-card-img">
+          <div class="dish-icon-wrap drinks-color"><i class="fas fa-glass-water"></i></div>
+        </div>
+        <div class="menu-card-body">
+          <div class="menu-card-top">
+            <h3>Soft Drinks &amp; Water</h3>
+            <span class="menu-price">From £1.50</span>
+          </div>
+          <p>Selection of soft drinks, still and sparkling water, and fruit juices available at the counter.</p>
+          <div class="menu-tags"><span>Drink</span></div>
+        </div>
+      </article>
+
+    </div><!-- /menuGrid2 -->
+
+    <div class="menu-cta" data-aos="fade-up" data-aos-delay="100">
+      <p>Full menu available in-store &amp; on Uber Eats. Prices may vary slightly for delivery.</p>
+      <a href="https://www.ubereats.com/gb/store/do-eat-restaurant/wgEC83jGVFaxYCymcVw1GA" target="_blank" rel="noopener noreferrer" class="btn-outline ripple" aria-label="Order on Uber Eats">
+        <i class="fas fa-motorcycle"></i> Order on Uber Eats
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════ SPECIALS SECTION ══════════════════════════════════ -->
+  <section id="specials" class="section specials-section" aria-labelledby="specials-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">Must Try</div>
+        <h2 id="specials-title" class="section-title">House Favourites</h2>
+        <p class="section-sub">Our three most-loved dishes — ordered again and again.</p>
+      </div>
+
+      <div class="specials-grid">
+
+        <div class="special-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="special-glow glow-orange"></div>
+          <div class="special-icon"><i class="fas fa-bowl-food"></i></div>
+          <div class="special-rank">#1</div>
+          <h3>Tomato &amp; Sliced Beef Ramen</h3>
+          <p>Our signature dish — a rich, tangy tomato broth slow-simmered with tender beef, springy ramen noodles and a perfectly soft-boiled egg. The bowl that keeps people coming back.</p>
+          <div class="special-footer">
+            <span class="special-price">£11.95</span>
+            <span class="special-label"><i class="fas fa-fire"></i> Bestseller</span>
+          </div>
+        </div>
+
+        <div class="special-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="special-glow glow-red"></div>
+          <div class="special-icon"><i class="fas fa-bowl-rice"></i></div>
+          <div class="special-rank special-rank-main">#2</div>
+          <div class="special-crown"><i class="fas fa-crown"></i> Chef's Pick</div>
+          <h3>Pork Belly in Hot Chilli &amp; Black Bean with Rice</h3>
+          <p>Slow-braised pork belly bathed in a punchy black bean and chilli sauce — bold, warming and deeply satisfying on a bed of steamed rice. An absolute crowd favourite.</p>
+          <div class="special-footer">
+            <span class="special-price">£12.50</span>
+            <span class="special-label"><i class="fas fa-star"></i> Chef's Pick</span>
+          </div>
+        </div>
+
+        <div class="special-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="special-glow glow-golden"></div>
+          <div class="special-icon"><i class="fas fa-drumstick-bite"></i></div>
+          <div class="special-rank">#3</div>
+          <h3>Stewed Drumstick with Rice</h3>
+          <p>Fall-off-the-bone chicken drumstick slow-stewed in a comforting soy and ginger gravy. Simple, hearty and consistently praised — the kind of dish that feels like home.</p>
+          <div class="special-footer">
+            <span class="special-price">£11.50</span>
+            <span class="special-label"><i class="fas fa-thumbs-up"></i> Fan Favourite</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ GALLERY SECTION ══════════════════════════════════ -->
+  <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">Visual Feast</div>
+        <h2 id="gallery-title" class="section-title">Gallery</h2>
+        <p class="section-sub">A taste of what's waiting for you at Do Eat.</p>
+      </div>
+
+      <div class="gallery-masonry" role="list">
+        <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="0" role="listitem" tabindex="0" aria-label="Open ramen bowl image">
+          <div class="gallery-placeholder gp1">
+            <i class="fas fa-bowl-food"></i>
+            <span>Signature Ramen</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Signature Ramen</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="50" role="listitem" tabindex="0" aria-label="Open rice dish image">
+          <div class="gallery-placeholder gp2">
+            <i class="fas fa-bowl-rice"></i>
+            <span>Pork Belly Rice</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Pork Belly Rice</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" role="listitem" tabindex="0" aria-label="Open dumplings image">
+          <div class="gallery-placeholder gp3">
+            <i class="fas fa-circle-dot"></i>
+            <span>Steamed Dumplings</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Steamed Dumplings</span>
+          </div>
+        </div>
+        <div class="gallery-item wide" data-aos="fade-up" data-aos-delay="150" role="listitem" tabindex="0" aria-label="Open restaurant interior image">
+          <div class="gallery-placeholder gp4">
+            <i class="fas fa-store"></i>
+            <span>Restaurant Interior</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Our Space</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" role="listitem" tabindex="0" aria-label="Open noodles image">
+          <div class="gallery-placeholder gp5">
+            <i class="fas fa-utensils"></i>
+            <span>Chow Mein</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Chow Mein</span>
+          </div>
+        </div>
+        <div class="gallery-item tall" data-aos="fade-up" data-aos-delay="250" role="listitem" tabindex="0" aria-label="Open stewed drumstick image">
+          <div class="gallery-placeholder gp6">
+            <i class="fas fa-drumstick-bite"></i>
+            <span>Stewed Drumstick</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Stewed Drumstick</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" role="listitem" tabindex="0" aria-label="Open jasmine tea image">
+          <div class="gallery-placeholder gp7">
+            <i class="fas fa-mug-hot"></i>
+            <span>Jasmine Tea</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Jasmine Tea</span>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="350" role="listitem" tabindex="0" aria-label="Open spring rolls image">
+          <div class="gallery-placeholder gp8">
+            <i class="fas fa-leaf"></i>
+            <span>Spring Rolls</span>
+          </div>
+          <div class="gallery-overlay">
+            <i class="fas fa-expand"></i>
+            <span>Spring Rolls</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox"><i class="fas fa-times"></i></button>
+      <div class="lightbox-content">
+        <div class="lightbox-img-wrap" id="lightboxImg"></div>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ WHY US SECTION ══════════════════════════════════ -->
+  <section id="why-us" class="section whyus-section" aria-labelledby="whyus-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 id="whyus-title" class="section-title">The Do Eat Difference</h2>
+        <p class="section-sub">Six reasons our regulars keep choosing us.</p>
+      </div>
+
+      <div class="whyus-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Fresh Ingredients</h3>
+          <p>Quality produce sourced fresh every day, with no shortcuts in the kitchen.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="80">
+          <div class="why-icon"><i class="fas fa-bowl-rice"></i></div>
+          <h3>Crafted Daily</h3>
+          <p>Broths, sauces and fillings are made from scratch in-house so every dish is consistent and full-flavoured.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="why-icon"><i class="fas fa-fire-flame-curved"></i></div>
+          <h3>Authentic Flavour</h3>
+          <p>Traditional Chinese and Asian recipes cooked the right way — balanced, bold and instantly satisfying.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="240">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>Quality Service</h3>
+          <p>Friendly, attentive staff who make every visit smooth — from ordering to table service.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="320">
+          <div class="why-icon"><i class="fas fa-wallet"></i></div>
+          <h3>Great Value</h3>
+          <p>Generous portions and premium ingredients delivered at honest prices in the city centre.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon"><i class="fas fa-broom"></i></div>
+          <h3>Clean Comfort</h3>
+          <p>A welcoming, spotless space where regulars feel comfortable eating in or ordering takeout.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ DELIVERY BANNER ══════════════════════════════════ -->
+  <section class="delivery-banner" aria-label="Delivery options">
+    <div class="container">
+      <div class="delivery-inner" data-aos="fade-up">
+        <div class="delivery-text">
+          <h3>Craving Do Eat at home?</h3>
+          <p>Order delivery through Uber Eats — fast, reliable, and straight to your door.</p>
+        </div>
+        <div class="delivery-actions">
+          <a href="https://www.ubereats.com/gb/store/do-eat-restaurant/wgEC83jGVFaxYCymcVw1GA"
+             target="_blank" rel="noopener noreferrer" class="delivery-btn uber" aria-label="Order on Uber Eats">
+            <i class="fas fa-motorcycle"></i> Uber Eats
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ REVIEWS SECTION ══════════════════════════════════ -->
+  <section id="reviews" class="section reviews-section" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">What People Say</div>
+        <h2 id="reviews-title" class="section-title">Customer Reviews</h2>
+        <p class="section-sub">
+          Rated <strong>4.2 / 5</strong> on Google based on <strong>146 reviews</strong>.
+          Reviews below are sourced from publicly visible Google feedback.
+        </p>
+      </div>
+
+      <!-- Google Rating Display -->
+      <div class="rating-display" data-aos="fade-up" data-aos-delay="100">
+        <div class="rating-big">4.2</div>
+        <div class="rating-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+        </div>
+        <div class="rating-count">Based on 146 Google Reviews</div>
+        <a href="https://maps.google.com/?q=Do+Eat+Restaurant+Manchester+M1+4AH" target="_blank" rel="noopener noreferrer" class="btn-outline ripple" style="margin-top:1rem;" aria-label="Leave a Google review">
+          <i class="fab fa-google"></i> Leave a Review
+        </a>
+      </div>
+
+      <!-- Swiper Reviews -->
+      <div class="swiper reviews-swiper" data-aos="fade-up" data-aos-delay="200" aria-label="Customer reviews carousel">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true">G</div>
+                <div class="review-meta">
+                  <span class="review-name">Google Reviewer</span>
+                  <div class="review-stars" aria-label="5 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <i class="fab fa-google review-platform" aria-label="Google review"></i>
+              </div>
+              <p class="review-text">"The tomato beef ramen is absolutely incredible. Deep, rich broth and the beef is so tender. Became my go-to lunch spot near Piccadilly."</p>
+              <span class="review-source">via Google Maps</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true">G</div>
+                <div class="review-meta">
+                  <span class="review-name">Google Reviewer</span>
+                  <div class="review-stars" aria-label="4 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                </div>
+                <i class="fab fa-google review-platform" aria-label="Google review"></i>
+              </div>
+              <p class="review-text">"Stumbled across Do Eat on my way through Manchester. The pork belly rice blew me away — bold flavours, huge portion, very reasonable price. Will be back."</p>
+              <span class="review-source">via Google Maps</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true">G</div>
+                <div class="review-meta">
+                  <span class="review-name">Google Reviewer</span>
+                  <div class="review-stars" aria-label="5 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <i class="fab fa-google review-platform" aria-label="Google review"></i>
+              </div>
+              <p class="review-text">"Quick, affordable and genuinely tasty. The dumplings are great and the service is friendly. Perfect for a no-fuss lunch in the city centre."</p>
+              <span class="review-source">via Google Maps</span>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-top">
+                <div class="review-avatar" aria-hidden="true">G</div>
+                <div class="review-meta">
+                  <span class="review-name">Google Reviewer</span>
+                  <div class="review-stars" aria-label="4 stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="far fa-star"></i>
+                  </div>
+                </div>
+                <i class="fab fa-google review-platform" aria-label="Google review"></i>
+              </div>
+              <p class="review-text">"Hidden gem inside City Tower. The stewed drumstick is comfort food at its best. So glad I found this place — highly recommend for anyone in the area."</p>
+              <span class="review-source">via Google Maps</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination" aria-label="Reviews pagination"></div>
+        <div class="swiper-button-prev" aria-label="Previous review"></div>
+        <div class="swiper-button-next" aria-label="Next review"></div>
+      </div>
+
+      <p class="review-disclaimer" style="text-align:center;margin-top:1rem;opacity:0.6;font-size:0.8rem;">
+        * Review sentiments sourced from publicly available Google review data. Individual reviewer names not reproduced.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ LOCATION SECTION ══════════════════════════════════ -->
+  <section id="location" class="section location-section" aria-labelledby="location-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">Find Us</div>
+        <h2 id="location-title" class="section-title">Location &amp; Hours</h2>
+        <p class="section-sub">We're right in the heart of Manchester — easy to reach by foot, bus or tram.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info" data-aos="fade-right" data-aos-duration="900">
+
+          <div class="info-block">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info-text">
+              <h4>Address</h4>
+              <p>Unit B1, City Tower<br>Mosley Street<br>Manchester, M1 4AH<br>United Kingdom</p>
+              <a href="https://maps.google.com/?q=Do+Eat+Restaurant+Unit+B1+City+Tower+Mosley+Street+Manchester+M1+4AH" target="_blank" rel="noopener noreferrer" class="info-link" aria-label="Get directions to Do Eat">
+                <i class="fas fa-directions"></i> Get Directions
+              </a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <a href="tel:+441614253560" class="info-link" aria-label="Call Do Eat restaurant">+44 161 425 3560</a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div class="info-text">
+              <h4>Opening Hours</h4>
+              <table class="hours-table" aria-label="Opening hours">
+                <tr><td>Monday – Thursday</td><td>11:30 – 21:00</td></tr>
+                <tr><td>Friday – Saturday</td><td>11:30 – 22:00</td></tr>
+                <tr><td>Sunday</td><td>12:00 – 21:00</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon"><i class="fas fa-bus"></i></div>
+            <div class="info-text">
+              <h4>Nearest Transport</h4>
+              <p>Bus stop Mosley Street (Stop CV) — 58m walk<br>
+              Bus stop Piccadilly Gardens — 105m walk<br>
+              Manchester Piccadilly Station — 5 min walk</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon"><i class="fas fa-credit-card"></i></div>
+            <div class="info-text">
+              <h4>Payment</h4>
+              <p>Credit &amp; Debit Cards · Contactless · Apple &amp; Google Pay</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="location-map" data-aos="fade-left" data-aos-duration="900" data-aos-delay="100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.1234567890123!2d-2.2397!3d53.4793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1bf4cbdc489%3A0x1234567890abcdef!2sCity%20Tower%2C%20Mosley%20St%2C%20Manchester%20M1%204AH%2C%20UK!5e0!3m2!1sen!2suk!4v1234567890"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Do Eat Restaurant location on Google Maps"
+            aria-label="Map showing Do Eat Restaurant at City Tower, Mosley Street, Manchester">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ CONTACT SECTION ══════════════════════════════════ -->
+  <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <div class="section-tag">Get in Touch</div>
+        <h2 id="contact-title" class="section-title">Reserve or Enquire</h2>
+        <p class="section-sub">Book a table, ask a question or let us know you're coming.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-form-wrap" data-aos="fade-right" data-aos-duration="900">
+          <form id="contactForm" class="contact-form" novalidate aria-label="Contact and reservation form">
+            <div class="form-group">
+              <label for="contactName">Full Name <span aria-hidden="true">*</span></label>
+              <div class="input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="contactName" name="name" placeholder="Your full name" required aria-required="true" autocomplete="name" />
+              </div>
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address <span aria-hidden="true">*</span></label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required aria-required="true" autocomplete="email" />
+              </div>
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactPhone">Phone Number</label>
+                <div class="input-wrap">
+                  <i class="fas fa-phone"></i>
+                  <input type="tel" id="contactPhone" name="phone" placeholder="+44 7700 000000" autocomplete="tel" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactGuests">Number of Guests</label>
+                <div class="input-wrap">
+                  <i class="fas fa-users"></i>
+                  <select id="contactGuests" name="guests" aria-label="Number of guests">
+                    <option value="">Select guests</option>
+                    <option value="1">1 guest</option>
+                    <option value="2">2 guests</option>
+                    <option value="3">3 guests</option>
+                    <option value="4">4 guests</option>
+                    <option value="5">5 guests</option>
+                    <option value="6+">6+ guests</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactDate">Preferred Date &amp; Time</label>
+              <div class="input-wrap">
+                <i class="fas fa-calendar"></i>
+                <input type="datetime-local" id="contactDate" name="datetime" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message <span aria-hidden="true">*</span></label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment"></i>
+                <textarea id="contactMessage" name="message" placeholder="Any dietary requirements, special requests or questions..." rows="4" required aria-required="true"></textarea>
+              </div>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn-primary ripple submit-btn" aria-label="Send reservation request">
+              <i class="fas fa-paper-plane"></i> Send Reservation Request
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. We'll confirm your reservation shortly. You can also call us directly at <a href="tel:+441614253560">+44 161 425 3560</a>.</p>
+          </div>
+        </div>
+
+        <div class="contact-sidebar" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150">
+          <div class="sidebar-card">
+            <h3><i class="fas fa-headset"></i> Quick Contact</h3>
+            <a href="tel:+441614253560" class="contact-cta-link">
+              <i class="fas fa-phone"></i>
+              <span>+44 161 425 3560</span>
+            </a>
+          </div>
+          <div class="sidebar-card">
+            <h3><i class="fas fa-location-dot"></i> We're Here</h3>
+            <p>Unit B1, City Tower<br>Mosley St, Manchester<br>M1 4AH</p>
+          </div>
+          <div class="sidebar-card">
+            <h3><i class="fas fa-clock"></i> When to Visit</h3>
+            <p>Mon–Thu: 11:30–21:00<br>Fri–Sat: 11:30–22:00<br>Sun: 12:00–21:00</p>
+          </div>
+          <div class="sidebar-card">
+            <h3><i class="fas fa-motorcycle"></i> Prefer Delivery?</h3>
+            <a href="https://www.ubereats.com/gb/store/do-eat-restaurant/wgEC83jGVFaxYCymcVw1GA"
+               target="_blank" rel="noopener noreferrer" class="delivery-btn uber small" aria-label="Order on Uber Eats">
+              <i class="fas fa-motorcycle"></i> Order on Uber Eats
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-brand">
+            <div class="footer-logo" aria-label="Do Eat Restaurant">
+              <span class="logo-do">DO</span><span class="logo-eat">EAT</span>
+            </div>
+            <p class="footer-tagline">Authentic Chinese &amp; Asian Kitchen<br>Manchester City Centre</p>
+            <div class="footer-rating" aria-label="4.2 stars on Google">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-stroke"></i>
+              <span>4.2 / 5 · 146 Reviews</span>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul role="list">
+              <li><a href="#home" aria-label="Home">Home</a></li>
+              <li><a href="#about" aria-label="About">About</a></li>
+              <li><a href="#menu" aria-label="Menu">Menu</a></li>
+              <li><a href="#specials" aria-label="Specials">Specials</a></li>
+              <li><a href="#gallery" aria-label="Gallery">Gallery</a></li>
+              <li><a href="#reviews" aria-label="Reviews">Reviews</a></li>
+              <li><a href="#contact" aria-label="Contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-hours">
+            <h4>Opening Hours</h4>
+            <table aria-label="Opening hours">
+              <tr><td>Mon – Thu</td><td>11:30 – 21:00</td></tr>
+              <tr><td>Fri – Sat</td><td>11:30 – 22:00</td></tr>
+              <tr><td>Sunday</td><td>12:00 – 21:00</td></tr>
+            </table>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p><i class="fas fa-map-marker-alt"></i> Unit B1, City Tower<br>&nbsp;&nbsp;&nbsp;&nbsp;Mosley St, Manchester, M1 4AH</p>
+            <p><i class="fas fa-phone"></i> <a href="tel:+441614253560">+44 161 425 3560</a></p>
+            <p><i class="fas fa-motorcycle"></i> <a href="https://www.ubereats.com/gb/store/do-eat-restaurant/wgEC83jGVFaxYCymcVw1GA" target="_blank" rel="noopener noreferrer">Order via Uber Eats</a></p>
+            <div class="footer-services">
+              <span>Dine In</span>
+              <span>Takeaway</span>
+              <span>Delivery</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="footerYear"></span> Do Eat Restaurant, Manchester. All rights reserved.</p>
+        <p class="footer-note">Unit B1, City Tower, Mosley St, M1 4AH · <a href="tel:+441614253560">+44 161 425 3560</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ═══════════════════════════════════ SCRIPTS ══════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
